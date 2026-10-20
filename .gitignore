@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tgz
+.moonsox-sdk-conformance-key.json
+*conformance-key*.json
+*.pem
+.env
+*.session

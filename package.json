@@ -1,0 +1,58 @@
+{
+  "name": "@moonsox/trust",
+  "version": "1.0.0",
+  "description": "Moonsox Trust for bots and sites: Ed25519 bot identity, Web Bot Auth (RFC 9421) request signing and verification, and registry-signed bot cards. Zero dependencies.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.17"
+  },
+  "keywords": [
+    "moonsox",
+    "web-bot-auth",
+    "rfc9421",
+    "http-message-signatures",
+    "ed25519",
+    "bot",
+    "agent",
+    "identity",
+    "trust"
+  ],
+  "homepage": "https://github.com/dgr8fnh648-max/moonsox-trust#readme",
+  "author": "Moonsox",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/unit.test.mjs",
+    "conformance": "node scripts/conformance.mjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "5.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgr8fnh648-max/moonsox-trust.git"
+  },
+  "bugs": "https://github.com/dgr8fnh648-max/moonsox-trust/issues"
+}
